@@ -57,17 +57,13 @@ Slackactivity uses the **official Slack OAuth API** — no browser extensions, n
 
 ## 💸 Pricing
 
-| Plan | Price | Includes |
-|---|---|---|
-| **Free** | €0 forever | Unlimited workspaces, automatic status updates |
-| **Monthly Pro** | €7.99/month | Pro features for a single workspace |
-| **Lifetime** | €39.99 one-time / workspace | All Pro features, lifetime updates, VIP support |
+**100% free, forever.** Unlimited Slack workspaces, automatic status updates, smart scheduling, vacation mode — all of it, at no cost. No credit card, no trial, no catch.
 
-No credit card required to start → [slackactivity.com](https://slackactivity.com)
+→ [Get started free at slackactivity.com](https://slackactivity.com)
 
 ## 🛠️ Tech Stack
 
-Built with [Next.js](https://nextjs.org) (App Router), [Supabase](https://supabase.com), [Slack Web API](https://api.slack.com/web), Tailwind CSS, Radix UI, and Stripe.
+Built with [Next.js](https://nextjs.org) (App Router), [Supabase](https://supabase.com), [Slack Web API](https://api.slack.com/web), Tailwind CSS, and Radix UI.
 
 ## ❓ FAQ
 
@@ -78,7 +74,7 @@ Yes — Slackactivity is a mouse-jiggler alternative that works through the offi
 Not during your configured working hours. Slackactivity refreshes your presence every 5 minutes so you stay online on Slack.
 
 **Can I use it with multiple Slack workspaces?**
-Yes, unlimited workspaces on the free plan — each with its own schedule.
+Yes, unlimited workspaces — each with its own schedule. And it's completely free.
 
 **Is it safe?**
 It uses Slack's official OAuth flow and only the `users.profile:write` permission. It can't read messages or access workspace data.
