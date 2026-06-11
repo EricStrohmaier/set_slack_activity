@@ -111,7 +111,79 @@ export const seoPages = {
       "slack workspace management",
       "sync slack status",
     ],
-    canonical: `${baseUrl}/features/multiple-workspaces`,
+    canonical: `${baseUrl}/guides/manage-multiple-slack-workspaces`,
+  },
+  mouseJigglerAlternative: {
+    title: "Slack Mouse Jiggler Alternative - Stay Active Without Hacks",
+    description:
+      "Looking for a mouse jiggler to keep Slack active? There's a better way. Keep your Slack status green via the official Slack API - no hardware, no software running on your machine. Free to use.",
+    keywords: [
+      "slack mouse jiggler",
+      "mouse jiggler alternative",
+      "keep slack active without mouse jiggler",
+      "slack mouse mover",
+      "prevent slack idle",
+      "keep slack green",
+      "slack anti idle",
+    ],
+    canonical: `${baseUrl}/solutions/slack-mouse-jiggler-alternative`,
+  },
+  whyAmIAway: {
+    title: "Why Does Slack Show Me as Away? (And How to Fix It)",
+    description:
+      "Slack marks you as away after 30 minutes of inactivity - even when you're still working. Learn why Slack changes your status to away and every way to stay online, ranked.",
+    keywords: [
+      "why does slack show me as away",
+      "slack away status",
+      "slack says i am away",
+      "slack away after 30 minutes",
+      "how to not go away on slack",
+      "slack idle timeout",
+      "slack active status not working",
+    ],
+    canonical: `${baseUrl}/guides/why-does-slack-show-me-as-away`,
+  },
+  computerLocked: {
+    title: "Keep Slack Active When Your Computer Is Locked or Sleeping",
+    description:
+      "Stay online on Slack even when your laptop is closed, locked, or asleep. Cloud-based status automation keeps your Slack status green - no app running on your machine required.",
+    keywords: [
+      "keep slack active when computer locked",
+      "slack active laptop closed",
+      "stay online on slack when away from desk",
+      "slack status when computer sleeps",
+      "keep slack online without computer",
+      "slack active on mobile",
+    ],
+    canonical: `${baseUrl}/guides/keep-slack-active-computer-locked`,
+  },
+  distributedTeams: {
+    title: "Slack Status Tool for Distributed Teams - Sync Across Time Zones",
+    description:
+      "Help your distributed team show accurate Slack availability across time zones. Automatic status scheduling for global teams, async-friendly presence, and overlap-hour visibility.",
+    keywords: [
+      "slack for distributed teams",
+      "distributed team slack tool",
+      "slack across time zones",
+      "global team slack status",
+      "async team slack presence",
+      "team availability slack",
+    ],
+    canonical: `${baseUrl}/use-cases/distributed-teams`,
+  },
+  digitalNomads: {
+    title: "Slack Status Automation for Digital Nomads - Work From Anywhere",
+    description:
+      "Travel the world without your Slack status giving you away. Automatic timezone-aware status scheduling for digital nomads - stay green during your clients' work hours from anywhere.",
+    keywords: [
+      "slack for digital nomads",
+      "digital nomad slack status",
+      "slack timezone automation",
+      "work from anywhere slack",
+      "slack status while traveling",
+      "remote work timezone tool",
+    ],
+    canonical: `${baseUrl}/use-cases/digital-nomads`,
   },
 } as const;
 

@@ -39,13 +39,29 @@ const useCases = [
     title: "Freelance consultants",
     description:
       "Manage 3-5+ client Slack workspaces from one dashboard. Sync status across all clients, maintain professional presence, and save hours weekly. Free forever for freelancers.",
-    href: "/use-cases/freelance-consultants",
+    href: "/use-cases/freelancers-consultants",
     personas: [
       "Freelance Consultants",
       "Remote Employees",
       "Distributed Teams",
     ],
     benefits: ["Timezone Management", "Multi-Workspace", "Flexible Schedules"],
+  },
+  {
+    title: "Distributed Teams",
+    description:
+      "Keep every team member's Slack availability accurate across time zones. Faster routing during overlap hours, clear work-life boundaries, and no false 'away' status during deep work.",
+    href: "/use-cases/distributed-teams",
+    personas: ["Global Teams", "Team Leads", "Async Companies"],
+    benefits: ["Timezone Accuracy", "Overlap Visibility", "No Admin Setup"],
+  },
+  {
+    title: "Digital Nomads",
+    description:
+      "Work from anywhere and still show up green during your clients' office hours. Pin your Slack presence to any timezone - it works even when your laptop is offline or in your backpack.",
+    href: "/use-cases/digital-nomads",
+    personas: ["Digital Nomads", "Travelers", "Remote Freelancers"],
+    benefits: ["Any Timezone", "Works Offline", "Vacation Mode"],
   },
 ];
 

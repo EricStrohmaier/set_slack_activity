@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Zap, Clock, Video } from "lucide-react";
+import { ArrowRight, Zap, Clock, Video, MousePointer } from "lucide-react";
 import {
   SEOPageLayout,
   Section,
@@ -54,6 +54,14 @@ const solutions = [
       "Video Calls",
       "Zoom Integration",
     ],
+  },
+  {
+    title: "Slack Mouse Jiggler Alternative",
+    description:
+      "Skip the hardware hacks. Keep your Slack status green through the official Slack API - works even when your laptop is closed, locked, or asleep.",
+    href: "/solutions/slack-mouse-jiggler-alternative",
+    icon: MousePointer,
+    keywords: ["No Hardware", "Cloud-Based", "Official API", "Laptop Closed"],
   },
 ];
 

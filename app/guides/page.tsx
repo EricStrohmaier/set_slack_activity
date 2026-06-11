@@ -50,6 +50,22 @@ const guides = [
     readTime: "12 min read",
     topics: ["Setup Guide", "Troubleshooting", "Best Practices"],
   },
+  {
+    title: "Why Does Slack Show Me as Away? (And How to Fix It)",
+    description:
+      "Slack marks you away after 30 minutes of inactivity - even mid-work. Understand exactly why it happens and see every fix ranked, from manual workarounds to full automation.",
+    href: "/guides/why-does-slack-show-me-as-away",
+    readTime: "6 min read",
+    topics: ["Away Status", "Troubleshooting", "Fixes Ranked"],
+  },
+  {
+    title: "Keep Slack Active When Your Computer Is Locked or Sleeping",
+    description:
+      "Stay online on Slack with your laptop closed, locked, or asleep. Why local tricks fail and how cloud-based status automation keeps your green dot on - in 4 steps.",
+    href: "/guides/keep-slack-active-computer-locked",
+    readTime: "5 min read",
+    topics: ["Laptop Closed", "Sleep Mode", "Cloud Automation"],
+  },
 ];
 
 export default function GuidesPage() {
