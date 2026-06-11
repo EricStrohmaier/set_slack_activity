@@ -1,7 +1,7 @@
 import React from "react";
 import { redirect } from "next/navigation";
 import { supabaseAdmin } from "@/utils/supabase/admin";
-import { generateActivityReport, getUser } from "@/app/action";
+import { getUser } from "@/app/action";
 import DashboardSelector from "@/components/app/dashboard/dashboard";
 import { getUserWorkSpaces } from "@/lib/get/getUserWorkSpaces";
 
@@ -31,24 +31,11 @@ export default async function DashboardPage({
     );
   }
 
-  // Fetch workspaces and activity report
   const workspaces = await getUserWorkSpaces(user.id);
-  const endDate = new Date();
-  const startDate = new Date(endDate);
-  startDate.setDate(startDate.getDate() - 7);
-  const activityReport = await generateActivityReport(
-    user.id,
-    startDate,
-    endDate
-  );
 
   return (
     <div className="w-full overflow-x-hidden px-4 pb-8 sm:px-6 md:px-8">
-      <DashboardSelector
-        user={currentUser}
-        workspaces={workspaces}
-        activityReport={activityReport}
-      />
+      <DashboardSelector user={currentUser} workspaces={workspaces} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import { WebClient } from "@slack/web-api";
 import { createClient } from "@/utils/supabase/server";
 import { supabaseAdmin } from "@/utils/supabase/admin";
 import { Workspace } from "@/types/supabase";
+import { isWithinWorkingHours } from "@/lib/workingHours";
 
 export const getUser = async () => {
   const supabase = createClient();
@@ -128,13 +129,7 @@ export async function updateUserPresence(workspace: Workspace) {
   let action: string;
 
   try {
-    if (
-      workHours.daysOfWeek.includes(currentDay) &&
-      (currentHour > workHours.startHour ||
-        (currentHour === workHours.startHour && currentMinute >= 0)) &&
-      (currentHour < workHours.endHour ||
-        (currentHour === workHours.endHour && currentMinute === 0))
-    ) {
+    if (isWithinWorkingHours(workHours, currentDay, currentHour)) {
       await slack.users.setPresence({ presence: "auto" });
       action = "set_active";
     } else {
@@ -152,31 +147,4 @@ export async function updateUserPresence(workspace: Workspace) {
     console.error("Error updating user presence:", error);
     throw error;
   }
-}
-
-export async function generateActivityReport(
-  userId: string,
-  startDate: Date,
-  endDate: Date
-) {
-  const supabase = supabaseAdmin();
-  const { data, error } = await supabase
-    .from("activity_logs")
-    .select("*")
-    .eq("user_id", userId)
-    .gte("timestamp", startDate.toISOString())
-    .lte("timestamp", endDate.toISOString());
-
-  if (error) throw error;
-
-  const activeCount = data.filter((log) => log.action === "set_active").length;
-  const awayCount = data.filter((log) => log.action === "set_away").length;
-
-  return {
-    totalUpdates: data.length,
-    activeUpdates: activeCount,
-    awayUpdates: awayCount,
-    activePercentage: (activeCount / data.length) * 100,
-    awayPercentage: (awayCount / data.length) * 100,
-  };
 }

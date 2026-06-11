@@ -24,7 +24,9 @@ import {
   updateUserPresence,
   deleteWorkspaceById,
 } from "@/app/action";
-import { User, ActivityReport, Workspace } from "@/types/supabase";
+import { User, Workspace } from "@/types/supabase";
+import { isWithinWorkingHours } from "@/lib/workingHours";
+import WorkspaceStats from "./stats";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
@@ -70,7 +72,6 @@ import {
 interface SharedWorkspaceDashboardProps {
   user: User;
   initialWorkspaces: Workspace[];
-  initialActivityReport: ActivityReport;
   platformName: "Slack";
   authEndpoint: string;
 }
@@ -318,17 +319,19 @@ const SharedWorkspaceDashboard: React.FC<SharedWorkspaceDashboardProps> = ({
       daysOfWeek,
     };
 
-    const inWorkingDay = daysOfWeek?.includes?.(currentDay);
-    const inWorkingHour =
-      typeof currentHour === "number" &&
+    const valid =
+      Array.isArray(daysOfWeek) &&
       typeof startHour === "number" &&
-      typeof endHour === "number" &&
-      currentHour >= startHour &&
-      currentHour < endHour;
+      typeof endHour === "number";
 
-    const status = inWorkingDay && inWorkingHour ? "Online" : "Away";
-
-    return status;
+    return valid &&
+      isWithinWorkingHours(
+        { startHour, endHour, daysOfWeek, timezone },
+        currentDay,
+        currentHour
+      )
+      ? "Online"
+      : "Away";
   };
 
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -654,6 +657,13 @@ const SharedWorkspaceDashboard: React.FC<SharedWorkspaceDashboardProps> = ({
           at your computer. It will only prevent you from going to away.{" "}
         </p>
       </div>
+      {activeWorkspace && <div className="border-t mt-6" />}
+      {activeWorkspace && (
+        <WorkspaceStats
+          workspaceId={activeWorkspace.id}
+          teamName={activeWorkspace.team_name}
+        />
+      )}
     </div>
   );
 };

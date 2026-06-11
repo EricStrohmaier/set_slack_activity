@@ -6,18 +6,16 @@ import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
 import Link from "next/link";
 import SlackDashboardClient from "./SlackDashboard";
-import { User, ActivityReport, Workspace } from "@/types/supabase";
+import { User, Workspace } from "@/types/supabase";
 
 interface DashboardSelectorProps {
   user: User;
   workspaces: Workspace[];
-  activityReport: ActivityReport;
 }
 
 const DashboardSelector: React.FC<DashboardSelectorProps> = ({
   user,
   workspaces,
-  activityReport,
 }) => {
   const slackWorkspaces = workspaces.filter((w) => w.slack_auth_token);
 
@@ -36,11 +34,7 @@ const DashboardSelector: React.FC<DashboardSelectorProps> = ({
     <Card className="w-full max-w-3xl mx-auto py-2 mt-10">
       <CardContent className="pt-2">
         {slackWorkspaces.length > 0 ? (
-          <SlackDashboardClient
-            user={user}
-            initialWorkspaces={slackWorkspaces}
-            initialActivityReport={activityReport}
-          />
+          <SlackDashboardClient user={user} initialWorkspaces={slackWorkspaces} />
         ) : (
           <div className="text-center py-8">
             <h2 className="mb-4 text-2xl font-bold">

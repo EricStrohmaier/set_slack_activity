@@ -37,11 +37,3 @@ export interface WorkingHours {
   daysOfWeek: number[];
   timezone: string;
 }
-
-export interface ActivityReport {
-  totalUpdates: number;
-  activeUpdates: number;
-  awayUpdates: number;
-  activePercentage: number;
-  awayPercentage: number;
-}
