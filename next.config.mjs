@@ -27,6 +27,14 @@ const nextConfig = {
         hostname: "api.slack.com",
         protocol: "https",
       },
+      {
+        hostname: "getautoreview.com",
+        protocol: "https",
+      },
+      {
+        hostname: "adchat.app",
+        protocol: "https",
+      },
     ],
   },
   async rewrites() {

@@ -114,8 +114,12 @@ export async function POST(req: Request): Promise<Response> {
     n: 1,
   });
 
-  // Convert the response into a friendly text-stream
-  const stream = OpenAIStream(response);
+  // Convert the response into a friendly text-stream.
+  // Cast needed: openai >=4.104 stream types no longer match ai@3's
+  // OpenAIStream signature, but the runtime shape is identical.
+  const stream = OpenAIStream(
+    response as unknown as Parameters<typeof OpenAIStream>[0]
+  );
 
   // Respond with the stream
   return new StreamingTextResponse(stream);
