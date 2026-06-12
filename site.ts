@@ -101,6 +101,11 @@ export const landingpageContent = {
     src: "/Salackactivity_demo_movie.mov",
     title: "",
   },
+  liveStats: {
+    title: "Live service stats",
+    description:
+      "Real numbers from our production system — updated every few minutes.",
+  },
   fancyContent: {
     id: "appear-active",
     headline: "Appear Active on Slack",

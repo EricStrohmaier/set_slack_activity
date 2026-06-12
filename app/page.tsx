@@ -6,6 +6,8 @@ import Pricing from "@/components/app/Pricing";
 import { getUser } from "./action";
 import { MiddleCTA } from "@/components/landingpage/MiddleCTA";
 import { FancyContent } from "@/components/landingpage/FancyContent";
+import { LiveStats } from "@/components/landingpage/LiveStats";
+import { getPublicStats } from "@/lib/publicStats";
 
 export default async function page({
   params,
@@ -14,11 +16,12 @@ export default async function page({
   params: { id: string };
   searchParams: { show: boolean };
 }) {
-  const user = await getUser();
+  const [user, stats] = await Promise.all([getUser(), getPublicStats()]);
   return (
     <div className="text-text">
       <Hero />
       <DemoVideo />
+      {stats && <LiveStats stats={stats} />}
       <FancyContent />
       <FeatureSteps />
       <Pricing user={user} />
