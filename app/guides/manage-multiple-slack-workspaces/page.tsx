@@ -550,8 +550,10 @@ export default function ManageMultipleSlackWorkspacesPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-background-50 p-6 rounded-lg border border-text-200">
-              <Settings className="w-10 h-10 text-text-800 mb-3" />
-              <h3 className="text-xl font-semibold mb-3 text-text-900">Workspace Grouping</h3>
+              <div className="flex items-start gap-3 mb-3">
+                <Settings aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0 text-text-800" />
+                <h3 className="text-xl font-semibold text-text-900">Workspace Grouping</h3>
+              </div>
               <p className="text-text-700 mb-3">
                 Group similar workspaces together for easier management. Create groups like &quot;Active Clients&quot;,
                 &quot;Internal Teams&quot;, &quot;Side Projects&quot;. Apply settings to entire groups at once.
@@ -561,8 +563,10 @@ export default function ManageMultipleSlackWorkspacesPage() {
               </p>
             </div>
             <div className="bg-background-50 p-6 rounded-lg border border-text-200">
-              <Globe className="w-10 h-10 text-text-800 mb-3" />
-              <h3 className="text-xl font-semibold mb-3 text-text-900">Time Zone Templates</h3>
+              <div className="flex items-start gap-3 mb-3">
+                <Globe aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0 text-text-800" />
+                <h3 className="text-xl font-semibold text-text-900">Time Zone Templates</h3>
+              </div>
               <p className="text-text-700 mb-3">
                 Create schedule templates for common time zones you work with. Save templates like &quot;EST Business
                 Hours&quot;, &quot;PST Extended Hours&quot;, &quot;GMT Morning Shift&quot; and apply them to workspaces quickly.
@@ -572,8 +576,10 @@ export default function ManageMultipleSlackWorkspacesPage() {
               </p>
             </div>
             <div className="bg-background-50 p-6 rounded-lg border border-text-200">
-              <Layout className="w-10 h-10 text-text-800 mb-3" />
-              <h3 className="text-xl font-semibold mb-3 text-text-900">Priority Workspaces</h3>
+              <div className="flex items-start gap-3 mb-3">
+                <Layout aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0 text-text-800" />
+                <h3 className="text-xl font-semibold text-text-900">Priority Workspaces</h3>
+              </div>
               <p className="text-text-700 mb-3">
                 Mark certain workspaces as &quot;Priority&quot; so they&apos;re always at the top of your dashboard. For
                 your most important clients or your primary employer.
@@ -583,8 +589,10 @@ export default function ManageMultipleSlackWorkspacesPage() {
               </p>
             </div>
             <div className="bg-background-50 p-6 rounded-lg border border-text-200">
-              <Zap className="w-10 h-10 text-text-800 mb-3" />
-              <h3 className="text-xl font-semibold mb-3 text-text-900">Quick Actions</h3>
+              <div className="flex items-start gap-3 mb-3">
+                <Zap aria-hidden="true" className="mt-0.5 h-6 w-6 shrink-0 text-text-800" />
+                <h3 className="text-xl font-semibold text-text-900">Quick Actions</h3>
+              </div>
               <p className="text-text-700 mb-3">
                 One-click actions like &quot;Pause All for 1 Hour&quot;, &quot;Enable Vacation Mode for All&quot;, or
                 &quot;Sync Custom Status to All Workspaces&quot;. Bulk actions save time when managing many workspaces.

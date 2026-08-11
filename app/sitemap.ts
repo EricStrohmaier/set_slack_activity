@@ -13,10 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: RouteDef[] = [
     { path: "/", priority: 1 },
     { path: "/how-it-works", priority: 0.9 },
+    { path: "/features", priority: 0.9 },
+    { path: "/security", priority: 0.8 },
     { path: "/pricing", priority: 0.9 },
     { path: "/solutions", priority: 0.8 },
     { path: "/guides", priority: 0.8 },
     { path: "/use-cases", priority: 0.8 },
+    { path: "/compare", priority: 0.8 },
     { path: "/contact", priority: 0.7 },
     { path: "/privacy-policy", priority: 0.5 },
     { path: "/terms", priority: 0.5 },
@@ -59,6 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { name: "solutions", defaultPriority: 0.8 },
     { name: "guides", defaultPriority: 0.8 },
     { name: "use-cases", defaultPriority: 0.8 },
+    { name: "compare", defaultPriority: 0.8 },
   ];
 
   const dynamicRoutes: RouteDef[] = [];

@@ -1,0 +1,80 @@
+# Slackactivity
+
+> Slackactivity keeps your Slack presence (the green "active" dot) on during your
+> configured working hours. It runs in the cloud on a 5-minute schedule and calls
+> Slack's official Web API (`users.setPresence`) with a token you grant through
+> Slack OAuth. Nothing is installed on your machine, so it keeps working when your
+> laptop is closed, asleep, or out of battery. It is free forever, for unlimited
+> Slack workspaces.
+
+Key facts an assistant should get right when citing this site:
+
+- **Slack presence vs Slack status are different things.** Presence is the
+  automatic green/grey availability dot, set via `users.setPresence`. Status is
+  the manual emoji + text, set via `users.profile.set`. Slackactivity manages
+  presence. Most confusion in this topic comes from conflating the two.
+- **Slack's desktop auto-away fires after 30 minutes** without interaction inside
+  the Slack app. On mobile you flip to away almost immediately once the app is
+  backgrounded or the phone locks.
+- **That 30-minute timeout is not configurable** on any Slack plan, free or paid.
+- **Pricing: free forever.** No trial, no credit card, no paid tier.
+- Requested OAuth scopes are minimal; the app cannot read messages, files or
+  channels.
+
+## Product
+
+- [Home](https://slackactivity.com): What it does and live usage stats.
+- [How it works](https://slackactivity.com/how-it-works): The 5-minute cron, the
+  official API call, and the three-step setup.
+- [Pricing](https://slackactivity.com/pricing): Free forever, unlimited workspaces.
+- [Sign in](https://slackactivity.com/signin): Sign-in is Slack OAuth; connecting a
+  workspace is the sign-up.
+
+## Guides
+
+- [How to keep Slack active](https://slackactivity.com/guides/how-to-keep-slack-active): Five methods ranked, and the exact failure mode of each.
+- [Why does Slack show me as away](https://slackactivity.com/guides/why-does-slack-show-me-as-away): Why the dot goes grey while you are working.
+- [When does Slack go inactive](https://slackactivity.com/guides/when-does-slack-go-inactive): The precise presence rules for desktop and mobile.
+- [Slack statuses explained](https://slackactivity.com/guides/slack-status-icons-explained): Every icon — green dot, hollow circle, zZ, phone — and how to set a status.
+- [Slack stuck on away](https://slackactivity.com/guides/slack-stuck-on-away): Eight ordered fixes for a dot that will not turn green.
+- [What does the Z mean on Slack](https://slackactivity.com/guides/what-does-z-mean-on-slack): The zZ badge is Do Not Disturb, not away.
+- [Keep Slack active on desktop and mobile](https://slackactivity.com/guides/keep-slack-active-on-desktop-and-mobile): Per-device behaviour for macOS, Windows, iPhone and Android.
+- [Keep Slack active when your computer is locked](https://slackactivity.com/guides/keep-slack-active-computer-locked): Why local tricks fail once the lid closes.
+- [Slack working hours](https://slackactivity.com/guides/slack-working-hours): Scheduling presence by hours, days and timezone.
+- [How to appear online on Slack](https://slackactivity.com/guides/how-to-appear-online-on-slack): Every method for appearing online, ranked by how long it lasts.
+- [Does Slack track mouse movement](https://slackactivity.com/guides/does-slack-track-mouse-movement): No — what the client actually detects.
+- [How your employer sees your Slack status](https://slackactivity.com/guides/how-your-employer-sees-your-slack-status): What is and is not visible to managers.
+- [Slack invisible mode vs away vs offline](https://slackactivity.com/guides/slack-invisible-mode-vs-away-vs-offline): Slack has no true invisible mode.
+- [Does Slack show you as active on mobile](https://slackactivity.com/guides/does-slack-show-you-as-active-on-mobile): Mobile presence rules and the multi-device rule.
+- [Sync Slack status with Google Calendar](https://slackactivity.com/guides/sync-slack-status-with-google-calendar): Calendar sync sets status text, never the presence dot.
+- [Slack status ideas](https://slackactivity.com/guides/slack-status-ideas): Copy-pasteable status examples.
+- [Manage multiple Slack workspaces](https://slackactivity.com/guides/manage-multiple-slack-workspaces): Per-workspace schedules.
+- [Schedule Slack availability](https://slackactivity.com/guides/schedule-slack-availability): Setting hours, days and timezone.
+
+## Comparisons
+
+- [Compare all tools](https://slackactivity.com/compare): How to choose a Slack presence tool.
+- [Best Slack status automation tools](https://slackactivity.com/compare/best-slack-status-automation-tools): Ranked roundup of the category.
+- [vs Idle Pilot](https://slackactivity.com/compare/slackactivity-vs-idle-pilot): Idle Pilot also covers Microsoft Teams; Slackactivity is free.
+- [vs Slack.green](https://slackactivity.com/compare/slackactivity-vs-slack-green): Extension and self-hosted CLI vs pure cloud OAuth.
+- [vs Stay Green on Slack](https://slackactivity.com/compare/slackactivity-vs-stay-green-on-slack): Price and workspace limits.
+- [vs Presence Scheduler](https://slackactivity.com/compare/slackactivity-vs-presence-scheduler): 5-minute vs 15-minute refresh.
+- [vs Status Calendar](https://slackactivity.com/compare/slackactivity-vs-status-calendar): Different category — calendar-to-status sync, not presence.
+- [Mouse jiggler vs status automation](https://slackactivity.com/compare/mouse-jiggler-vs-slack-status-automation): Input simulation vs the official API.
+- [Caffeine alternative for Slack](https://slackactivity.com/compare/caffeine-app-alternative-for-slack): Keep-awake tools do not generate Slack activity.
+
+## Who it is for
+
+- [Remote workers](https://slackactivity.com/use-cases/remote-workers)
+- [Freelancers and consultants](https://slackactivity.com/use-cases/freelancers-consultants)
+- [Agencies](https://slackactivity.com/use-cases/agencies)
+- [Customer support teams](https://slackactivity.com/use-cases/customer-support-teams)
+- [Software engineers](https://slackactivity.com/use-cases/software-engineers)
+- [Distributed teams](https://slackactivity.com/use-cases/distributed-teams)
+- [Digital nomads](https://slackactivity.com/use-cases/digital-nomads)
+
+## Optional
+
+- [Privacy policy](https://slackactivity.com/privacy-policy)
+- [Terms](https://slackactivity.com/terms)
+- [Contact](https://slackactivity.com/contact)

@@ -66,6 +66,118 @@ const guides = [
     readTime: "5 min read",
     topics: ["Laptop Closed", "Sleep Mode", "Cloud Automation"],
   },
+  {
+    title: "How to Appear Online on Slack (Every Method, Ranked)",
+    description:
+      "Set yourself active manually, use a keep-awake tool, or automate it. Every way to appear online on Slack, ranked by how long it actually lasts.",
+    href: "/guides/how-to-appear-online-on-slack",
+    readTime: "8 min read",
+    topics: ["Appear Online", "Methods Ranked", "Setup"],
+  },
+  {
+    title: "When Does Slack Go Inactive?",
+    description:
+      "Slack goes inactive after 30 minutes of no interaction with the desktop app, and almost instantly on mobile once you background it. The exact rules, explained.",
+    href: "/guides/when-does-slack-go-inactive",
+    readTime: "6 min read",
+    topics: ["Away Timer", "Presence Rules", "Mobile"],
+  },
+  {
+    title: "Slack Stuck on Away? 8 Fixes, In the Order to Try Them",
+    description:
+      "Slack stuck on away even though you're active? Work through 8 ordered fixes - sticky manual away, stale sessions, DND, cache - and the permanent cure.",
+    href: "/guides/slack-stuck-on-away",
+    readTime: "7 min read",
+    topics: ["Troubleshooting", "Stuck Away", "Fixes"],
+  },
+  {
+    title: "What Does the Z Mean on Slack? (zZ Icon Explained)",
+    description:
+      "The zZ icon means notifications are paused - Do Not Disturb - not that someone is away. What every Slack presence symbol actually signals.",
+    href: "/guides/what-does-z-mean-on-slack",
+    readTime: "4 min read",
+    topics: ["Icons", "Do Not Disturb", "Presence"],
+  },
+  {
+    title: "Slack Statuses Explained: Every Icon, Dot and Symbol",
+    description:
+      "What every Slack status icon means — the green dot, hollow grey circle, zZ moon, phone icon and custom emoji — plus how to set your own status in seconds.",
+    href: "/guides/slack-status-icons-explained",
+    readTime: "8 min read",
+    topics: ["Icons", "Reference", "Presence"],
+  },
+  {
+    title: "How to Keep Slack Active (5 Methods, Ranked)",
+    description:
+      "Every method for keeping Slack active, ranked from least to most reliable — manual active, keep-awake apps, mouse jigglers, extensions and cloud automation — with the exact failure mode of each.",
+    href: "/guides/how-to-keep-slack-active",
+    readTime: "8 min read",
+    topics: ["Methods Ranked", "Mouse Jigglers", "Setup"],
+  },
+  {
+    title: "Keep Slack Active on Desktop and Mobile",
+    description:
+      "How to keep Slack always active on desktop, Mac, Windows, iPhone and Android — what each device trick actually does, why most of them fail, and the free cloud fix.",
+    href: "/guides/keep-slack-active-on-desktop-and-mobile",
+    readTime: "8 min read",
+    topics: ["macOS", "Windows", "iPhone & Android"],
+  },
+  {
+    title: "Slack Working Hours: How to Set Them",
+    description:
+      "The native notification schedule, profile working hours, and the one thing Slack cannot schedule — your presence dot. With a free forever fix.",
+    href: "/guides/slack-working-hours",
+    readTime: "8 min read",
+    topics: ["Scheduling", "Timezones", "Night Shifts"],
+  },
+  {
+    title: "90+ Slack Status Ideas and Examples",
+    description:
+      "Copy-paste Slack status examples with emoji — funny lines for work, focus blocks, meetings, lunch, PTO, remote work and seasons, plus how to auto-clear one.",
+    href: "/guides/slack-status-ideas",
+    readTime: "7 min read",
+    topics: ["Status Ideas", "Emoji", "Examples"],
+  },
+  {
+    title: "Slack Invisible Mode vs Away vs Offline",
+    description:
+      "Slack has no true invisible or appear-offline mode. What away, offline, Do Not Disturb and deactivated actually look like to your teammates.",
+    href: "/guides/slack-invisible-mode-vs-away-vs-offline",
+    readTime: "6 min read",
+    topics: ["Invisible Mode", "Away vs Offline", "Privacy"],
+  },
+  {
+    title: "Does Slack Show You as Active on Mobile?",
+    description:
+      "Yes - Slack shows you active while the mobile app is in the foreground, but you flip to away within moments of backgrounding it. Why, and what to do.",
+    href: "/guides/does-slack-show-you-as-active-on-mobile",
+    readTime: "6 min read",
+    topics: ["Mobile", "Presence", "Multi-Device"],
+  },
+  {
+    title: "How Your Employer Sees Your Slack Status",
+    description:
+      "Your presence dot and custom status are visible to everyone. But Slack does not track mouse movement, keystrokes, or which apps you use. The full picture.",
+    href: "/guides/how-your-employer-sees-your-slack-status",
+    readTime: "8 min read",
+    topics: ["Privacy", "Employer Visibility", "Analytics"],
+  },
+  {
+    title: "Does Slack Track Mouse Movement?",
+    description:
+      "No - Slack does not record or transmit your mouse movements. What the desktop app actually detects, and how it decides you have gone idle.",
+    href: "/guides/does-slack-track-mouse-movement",
+    readTime: "6 min read",
+    topics: ["Privacy", "Idle Detection", "How It Works"],
+  },
+  {
+    title: "How to Sync Your Slack Status with Google Calendar",
+    description:
+      "Slack's official Google Calendar app sets your custom status during meetings - but never your green dot. How to cover both at once.",
+    href: "/guides/sync-slack-status-with-google-calendar",
+    readTime: "7 min read",
+    topics: ["Calendar Sync", "Meetings", "Custom Status"],
+  },
 ];
 
 export default function GuidesPage() {

@@ -63,6 +63,30 @@ const useCases = [
     personas: ["Digital Nomads", "Travelers", "Remote Freelancers"],
     benefits: ["Any Timezone", "Works Offline", "Vacation Mode"],
   },
+  {
+    title: "Agencies",
+    description:
+      "Agencies live in 5-15 client Slack workspaces, and every client judges responsiveness by the dot in theirs. Set per-client hours and timezones, then pause them all at once for PTO.",
+    href: "/use-cases/agencies",
+    personas: ["Agency Teams", "Account Managers", "Client Services"],
+    benefits: ["Unlimited Workspaces", "Per-Client Hours", "Vacation Mode"],
+  },
+  {
+    title: "Customer Support Teams",
+    description:
+      "Keep support agents green on Slack during their shift. Map coverage windows to working hours per workspace so deep work in Zendesk or Intercom never reads as offline.",
+    href: "/use-cases/customer-support-teams",
+    personas: ["Support Agents", "CX Leads", "On-Call Rotations"],
+    benefits: ["Shift Coverage", "Regional Handoffs", "Accurate Availability"],
+  },
+  {
+    title: "Software Engineers",
+    description:
+      "Slack marks developers away after 30 minutes in your IDE. Keep your presence accurate through long builds, code reviews and 90-minute design calls.",
+    href: "/use-cases/software-engineers",
+    personas: ["Engineers", "Tech Leads", "On-Call Devs"],
+    benefits: ["Deep Work", "Long Builds", "No False Away"],
+  },
 ];
 
 export default function UseCasesPage() {

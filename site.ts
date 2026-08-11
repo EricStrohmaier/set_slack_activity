@@ -139,14 +139,14 @@ export const landingpageContent = {
           step: "Set Your Availability",
           summary: "Tailored to your schedule.",
           description:
-            "Define your working hours. Slacktivity will ensure your status reflects when you're available, all without manual updates.",
+            "Define your working hours. Slackactivity will ensure your status reflects when you're available, all without manual updates.",
           iconKey: "schedule",
         },
         {
           step: "Focus on What Matters",
           summary: "Productivity maximized.",
           description:
-            "Stay focused on your tasks, while Slacktivity keeps you online and engaged in Slack. Let us handle the presence, so you can handle the work.",
+            "Stay focused on your tasks, while Slackactivity keeps you online and engaged in Slack. Let us handle the presence, so you can handle the work.",
           iconKey: "focus",
         },
       ],
@@ -154,7 +154,7 @@ export const landingpageContent = {
   },
 
   // pricing section
-  stripe: {
+  pricing: {
     id: "pricing",
     title: "Simple Pricing",
     heading: "Elevate Your Slack Presence",
@@ -207,7 +207,7 @@ export const landingpageContent = {
     highlightedText: "",
     suffix: "",
     subheadline:
-      "Join thousands of professionals who've optimized their workflow with Slacktivity. Start boosting your productivity now!",
+      "Join thousands of professionals who've optimized their workflow with Slackactivity. Start boosting your productivity now!",
     button: {
       text: "Get Started",
       href: "/signin",
@@ -219,10 +219,10 @@ export const landingpageContent = {
     active: false,
     id: "testimonials",
     headline: "What Our Users Say",
-    highlightedText: "About Slacktivity",
+    highlightedText: "About Slackactivity",
     suffix: "",
     subheadline:
-      "See how Slacktivity is transforming work for professionals across industries.",
+      "See how Slackactivity is transforming work for professionals across industries.",
     testimonials: [
       [
         {
@@ -238,7 +238,7 @@ export const landingpageContent = {
       [
         {
           content:
-            "As a remote team lead, Slacktivity helps me respect my team's boundaries while staying connected. It's a game-changer for our productivity.",
+            "As a remote team lead, Slackactivity helps me respect my team's boundaries while staying connected. It's a game-changer for our productivity.",
           author: {
             name: "Miguel Rodriguez",
             role: "Engineering Lead at Global Solutions",
@@ -249,7 +249,7 @@ export const landingpageContent = {
       [
         {
           content:
-            "Slacktivity is essential for maintaining work-life balance in our always-on culture. It's improved our team's communication and reduced burnout.",
+            "Slackactivity is essential for maintaining work-life balance in our always-on culture. It's improved our team's communication and reduced burnout.",
           author: {
             name: "Aisha Patel",
             role: "HR Director at Innovate Inc",
@@ -264,10 +264,10 @@ export const landingpageContent = {
   emailSignUp: {
     id: "its-free",
     headline: "Ready to Boost Your Productivity with",
-    highlightedText: "Slacktivity",
+    highlightedText: "Slackactivity",
     suffix: "?",
     subheadline:
-      "Start optimizing your workflow today or reach out to us at office@slacktivity.com for more information.",
+      "Start optimizing your workflow today, or reach out at office@slackactivity.com — Eric reads and answers every message himself.",
     placeholder: "Enter your work email",
     buttonText: "Get Started",
   },
@@ -275,10 +275,13 @@ export const landingpageContent = {
     links: {
       main: [
         { name: "How It Works", href: "/how-it-works" },
+        { name: "Features", href: "/features" },
+        { name: "Security", href: "/security" },
         { name: "Pricing", href: "/pricing" },
         { name: "Solutions", href: "/solutions" },
         { name: "Guides", href: "/guides" },
         { name: "Use Cases", href: "/use-cases" },
+        { name: "Compare", href: "/compare" },
         { name: "Support", href: "/contact" },
       ],
       legal: [
@@ -297,12 +300,6 @@ export const landingpageContent = {
           name: "AutoReview",
           target: "_blank",
           href: "https://getautoreview.com/?ref=slackactivity",
-        },
-        {
-          icon: "https://adchat.app/favicon.ico",
-          name: "AdChat",
-          target: "_blank",
-          href: "https://adchat.app/?ref=slackactivity",
         },
       ],
     },

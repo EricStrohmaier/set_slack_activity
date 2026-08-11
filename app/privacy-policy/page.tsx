@@ -15,7 +15,7 @@ const privacyPolicy = `
 
 *Last Updated: September 29, 2024*
 
-Slacktivity ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our website (https://slackactivity.com) and services.
+Slackactivity ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our website (https://slackactivity.com) and services.
 
 ### 1. Information We Collect
 
@@ -47,7 +47,7 @@ We use non-personal information to:
 
 ### 3. Cookies
 
-Slacktivity uses cookies and similar tracking technologies to enhance your browsing experience. Cookies help us remember your preferences and understand how you interact with our site. You can control or disable cookies in your browser settings, though this may affect the functionality of the site.
+Slackactivity uses cookies and similar tracking technologies to enhance your browsing experience. Cookies help us remember your preferences and understand how you interact with our site. You can control or disable cookies in your browser settings, though this may affect the functionality of the site.
 
 ### 4. Third-Party Service Providers
 
@@ -73,7 +73,7 @@ To exercise any of these rights, please contact us at office@slackactivity.com.
 
 ### 8. Children's Privacy
 
-Slacktivity is not intended for use by individuals under the age of 16, and we do not knowingly collect personal information from children.
+Slackactivity is not intended for use by individuals under the age of 16, and we do not knowingly collect personal information from children.
 
 ### 9. Changes to This Privacy Policy
 
@@ -87,7 +87,7 @@ Email: office@slackactivity.com.
 
 ---
 
-Thank you for trusting Slacktivity. We are committed to protecting your privacy and ensuring transparency in how your data is used.
+Thank you for trusting Slackactivity. We are committed to protecting your privacy and ensuring transparency in how your data is used.
 `;
 
 const PrivacyPolicy = () => {

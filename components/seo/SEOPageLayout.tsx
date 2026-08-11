@@ -63,8 +63,27 @@ interface FeatureCardProps {
 export function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <div className="bg-white border border-text-200 rounded-lg p-6 hover:shadow-md transition-shadow">
-      <div className="text-text-800 mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-3 text-text-900">{title}</h3>
+      {/*
+        Icon sits inline with the heading. Callers pass their own sizing
+        (w-10 h-10, w-8 h-8, ...) across hundreds of usages, so the size is
+        normalized here with a child selector — `.parent > svg` outranks the
+        `.h-10` utility on specificity, giving one consistent icon size
+        everywhere without touching every page.
+      */}
+      {/*
+        items-start + mt-0.5 optically centres the icon on the FIRST line of the
+        heading. With items-center, a title that wraps to two lines floats the
+        icon in the gap between them, which reads as a misalignment.
+      */}
+      <div className="flex items-start gap-3 mb-3">
+        <span
+          aria-hidden="true"
+          className="mt-0.5 shrink-0 text-text-800 [&>svg]:h-6 [&>svg]:w-6"
+        >
+          {icon}
+        </span>
+        <h3 className="text-xl font-semibold text-text-900">{title}</h3>
+      </div>
       <p className="text-text-600">{description}</p>
     </div>
   );
